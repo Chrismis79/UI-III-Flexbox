@@ -141,50 +141,66 @@ h2 h3{
 	text-align: center;
 	margin-bottom: 50px;
 }  
-/* 2nd pg starts here! */
+
+
+/* SERVICES PAGE STARTS HERE! */
+
 .services-header-img {
-	width: 100%; 
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px 10px 10px 0;
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 0;
 }
 .services {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .card {
-	width: 40%;
-	margin: 10px;
-	height: auto;
-	padding: 20px;
-	background-color: whitesmoke;
-	border: 1px solid black;
+    width: 40%;
+    margin: 10px;
+    height: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid black;
 }
 .button2 {
-	color: black;
-	padding: 10px 20px 10px 20px;
-	margin-top: 10px;
-	background-color: white;
-	border-radius: 4px;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 4px;
 }
-.services-info section{
-	width:  100%;
-	display: flex;
-	border: 1px solid green;
+
+
+/* Services info bottom section */
+
+
+.services-list {
+    list-style-type: square;
+    padding: 20px
 }
+
+.services-secondary p {
+    padding-right: 60px;
+}
+.services-list li {
+    padding: 5px 0;
+}
+
+.services-secondary {
+    display: flex;
+    width: 100%;
+}
+
 ul {
-	list-style-type: square;
-	line-height: 2;
-	list-style-position: inside;
+    list-style-type: square;
+    line-height: 2;
+    list-style-position: inside;
 
 }
 .facts {
-	width: 30%;
-	border: 1px solid black;
+    width: 30%;
+    border: 1px solid black;
 }
-.img-right {
-	width: 40%;
-	border: 1px solid blue;
-} 
