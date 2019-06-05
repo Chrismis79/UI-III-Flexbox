@@ -191,16 +191,16 @@ h2 h3{
 
 .services-secondary {
     display: flex;
-    width: 100%;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 ul {
     list-style-type: square;
     line-height: 2;
     list-style-position: inside;
+}
 
-}
-.facts {
-    width: 30%;
-    border: 1px solid black;
-}
+/* VISION PAGE STARTS HERE */
+
