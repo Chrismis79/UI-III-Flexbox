@@ -64,142 +64,191 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+	box-sizing: border-box;
+}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
 .container {
-	max-width: 800px;
+	width: 66%;
 	margin: 0 auto;
 }
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+/* NAVIGATION */
+
+nav {
+	/* border: 1px solid orange; */
+	margin-top: 10px;
 }
-.navigation {
-	display: flex;
-	width: 600px;
-	justify-content: space-around;
-}
-a {
-	color: lightgray;
+nav a{
+	color:lightgray;
 	text-decoration: none;
+	margin: 25px;
 	}
- .logo { 
-	justify-content: flex-end;
-} 
- .heading {
-	width: 100%;
-	display: flex;
-	align-items: center;
+/* a {
+	 border: 1px solid black; 
+} */
+
+/* HEADER */
+
+.logo {
+	position: fixed;
+	top: 0;
+	right: 170px;
+	margin-right: 60px;
+	width: 190px;
+	/* border: 1px solid green; */
 }
-.leftbox a{
-	display: flex;
-	width: 30%;
-	margin-left: 175px;
-	text-align: center;	
+.heading {
+	width: 100%;
+	padding: 10px;
+	/* border: 1px solid dodgerblue; */
+	display: inline-block;
+	margin-bottom: 60px;
+	
+}
+.innovation {
+	display: inline-block;
+	width: 40%;
+	margin: 0 auto;
+	margin-left: 70px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 90px;
+	padding-bottom: 10px;
+	/* border: 1px solid green; */
+}
+.right {
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 70px;
+	margin-left: 60px;
+	/* border: 1px solid red; */
 }
 h1 {
-	font-size: 60px;
+	font-size: 70px;
 	text-align: center;
-	margin-left: 100px;
 	}
-button {
-	color: black;
-	border: 1px solid black;
-}
-.image1 {
-	width: 30%;
-	margin-left: 150px;
-}
+
 h2 h3{
 	font-size: 25px;
 	text-align: left;
 }
-.section2 {
-	display: flex;
-	width: 100%
-	line-height: 1.15;
-	padding: 10px 10px 10px 0;
+button {
+	color: black;
+	padding: 5px 35px;
+	margin-top: 20px;
+	font-size: 18px;
+	background-color: white;
+	border: 1px solid black;
 }
- .middle-img {
+hr {
+	border: 2px solid lightgray;
+	margin-bottom: 40px;
+}
+
+/* TOP 2 PARAGRAPHS */
+
+.section2 div {
+	display: inline-block;
+	width: 49%;
+	line-height: 1.15;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+.middle-img {
 	width: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.section3 {
-	display: flex;
-	width: 100%;
-	padding: 10px 10px 10px 0;
-}
-.contact {
-	width: 800px;
+
+/* BOTTOM PARAGRAPHS */
+
+.section3 div {
+	display: inline-block;
+	width: 32%;
 	margin: 0 auto;
+	padding: 10px;
+	/* border: 1px solid green; */
+}
+/* CONTACT/FOOTER */
+
+.contact {
 	margin-top: 20px;
 }
-.footer {
+footer {
 	text-align: center;
 	margin-bottom: 50px;
-}  
-
-
-/* SERVICES PAGE STARTS HERE! */
-
-.services-header-img {
-    width: 100%; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 10px 10px 0;
 }
-.services {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.card {
-    width: 40%;
-    margin: 10px;
-    height: auto;
-    padding: 20px;
-    background-color: whitesmoke;
-    border: 1px solid black;
-}
-.button2 {
-    color: black;
-    padding: 10px 20px 10px 20px;
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 4px;
-}
-
-
-/* Services info bottom section */
-
-
-.services-list {
-    list-style-type: square;
-    padding: 20px
-}
-
-.services-secondary p {
-    padding-right: 60px;
-}
-.services-list li {
-    padding: 5px 0;
-}
-
-.services-secondary {
-    display: flex;
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-ul {
-    list-style-type: square;
-    line-height: 2;
-    list-style-position: inside;
-}
-
-/* PRODUCT PAGE STARTS HERE */
