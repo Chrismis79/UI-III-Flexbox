@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+
 html {
 	box-sizing: border-box;
 }
@@ -142,60 +143,45 @@ html {
 }
 
 .container {
-	width: 66%;
+	width: 900px;
 	margin: 0 auto;
 }
 
 /* NAVIGATION */
-
+	
+.navigation {
+	display: flex;
+	justify-content: space-around;
+}
 nav {
-	/* border: 1px solid orange; */
 	margin-top: 10px;
+	width: 100%;
 }
 nav a{
 	color:lightgray;
-	text-decoration: none;
+	text-decoration: none;	
 	margin: 25px;
 	}
-/* a {
-	 border: 1px solid black; 
-} */
+
 
 /* HEADER */
 
 .logo {
-	position: fixed;
-	top: 0;
-	right: 170px;
-	margin-right: 60px;
-	width: 190px;
-	/* border: 1px solid green; */
+	width: 220px; 
+	border: 1px solid green;
 }
+
 .heading {
 	width: 100%;
-	padding: 10px;
-	/* border: 1px solid dodgerblue; */
-	display: inline-block;
-	margin-bottom: 60px;
-	
+	display: flex;
+	margin-top: 60px;
 }
 .innovation {
-	display: inline-block;
 	width: 40%;
 	margin: 0 auto;
-	margin-left: 70px;
 	text-align: center;
-	vertical-align: middle;
-	padding-top: 90px;
-	padding-bottom: 10px;
-	/* border: 1px solid green; */
-}
-.right {
-	vertical-align: middle;
-	display: inline-block;
-	margin-top: 70px;
-	margin-left: 60px;
-	/* border: 1px solid red; */
+	padding-top: 65px;
+	padding-bottom: 10px; 
 }
 h1 {
 	font-size: 70px;
@@ -216,18 +202,17 @@ button {
 }
 hr {
 	border: 2px solid lightgray;
-	margin-bottom: 40px;
+	margin: 70px 0px 50px 0px;
 }
 
 /* TOP 2 PARAGRAPHS */
 
-.section2 div {
-	display: inline-block;
+.section2 {
+	display: flex;
 	width: 49%;
 	line-height: 1.15;
-	margin: 0 auto;
-	/* border: 1px solid red; */
 }
+
 .middle-img {
 	width: 100%;
 	margin-top: 20px;
