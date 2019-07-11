@@ -240,3 +240,27 @@ p {
 	text-align: center;
 	margin-bottom: 50px;
 }
+/* Services Page Starts Here */
+
+.services-header-img {
+	width: 100%;
+	margin: 15px 0px;
+	padding: 10px 0px;
+}
+
+h2 {
+	font-size: 20px;
+}
+.services {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid green;
+}
+.card {
+	width: 45%;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid red;
+}
