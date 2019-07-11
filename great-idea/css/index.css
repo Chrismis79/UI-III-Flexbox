@@ -249,18 +249,59 @@ p {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 25px;
 }
+
+/* Different services section */
+
 .services {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	border: 1px solid green;
+	
 }
 .card {
 	width: 45%;
+	padding: 20px;
+	margin: 20px;
+	background-color: #F4F3F4;
+	border: 1px solid black;
+}
+.services-hr {
+	border: 1px solid black;
+	margin: 20px 0px;
+}
+.button2 {
+	border-radius: 5px;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	padding: 10px 40px;
+	margin: 15px 10px;
+	border: 1px solid black;;
+}
+
+/* BOTTOM SECTION */
+.services-secondary {
+	display: flex;
+	height: 350px;
+	margin: 20px 0px;
+	/* border: 1px solid green; */
+}
+.services-list {
+	list-style-type: square;
+	padding: 20px;
+}
+.services-list li {
+    padding: 5px 0;
+}
+.facts {
+	width: 45%;
 	padding: 10px;
 	margin: 10px;
-	border: 1px solid red;
+	/* border: 1px solid red; */
+}
+.services-info-img {
+	padding: 10px;
+	margin: 10px;
 }
