@@ -168,7 +168,7 @@ nav a{
 
 .logo {
 	width: 220px; 
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .heading {
@@ -198,7 +198,7 @@ button {
 	margin-top: 20px;
 	font-size: 18px;
 	background-color: white;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 hr {
 	border: 2px solid lightgray;
@@ -209,10 +209,10 @@ hr {
 
 .section2 {
 	display: flex;
-	width: 49%;
+	width: 100%;
 	line-height: 1.15;
+	/* border: 1px solid blue; */
 }
-
 .middle-img {
 	width: 100%;
 	margin-top: 20px;
@@ -221,19 +221,22 @@ hr {
 
 /* BOTTOM PARAGRAPHS */
 
-.section3 div {
-	display: inline-block;
-	width: 32%;
+.section3 {
+	display: flex;
+	width: 100%;
 	margin: 0 auto;
 	padding: 10px;
-	/* border: 1px solid green; */
+    /* border: 1px solid green; */
+}
+p {
+	padding: 10px;
 }
 /* CONTACT/FOOTER */
 
 .contact {
-	margin-top: 20px;
+	margin: 20px;
 }
-footer {
+.copyright {
 	text-align: center;
 	margin-bottom: 50px;
 }
